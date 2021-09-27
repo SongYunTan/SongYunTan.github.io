@@ -1,0 +1,241 @@
+{
+  "main": {
+    "name":"Hi! I'm Song Yun!",
+    "description":"I'm an aspiring full-stack software developer.",
+    "image":"profilepic.jpg",
+    "bio":"I am a penultimate student at NTU's Renaissance Engineering Programme, specializing in Computer Science. Aspiring to be the engineer behind cutting-edge solutions, I am highly passionate about full-stack software development and committed to creating value. ",
+    "contactmessage":"I would love to connect with you!",
+    "email": "songyun.tan@gmail.com",
+    "phone": "",
+    "github":"https://github.com/nordicgiant2/react-nice-resume",
+    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "resumedownload":"./Tan Song Yun.pdf",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/songyun-tan/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/songyunnn",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/SongYunTan",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "education":[
+      {
+        "school":"Nanyang Technological University",
+        "degree":"Bachelor of Engineering Science (Computer Science) and Master of Science in Technology Management",
+        "graduated":"Dec 2023",
+        "description": [
+          "Renaissance Engineering Programme (REP) Scholarship"
+        ]
+      },
+      {
+        "school":"Hwa Chong Institution (Junior College)",
+        "degree":"GCE ‘A’ levels",
+        "graduated":"Dec 2018",
+        "description": [
+          "6 Distinctions and University Admission Points of 88.75/90", 
+          "Hwa Chong Diploma with Merit, Edusave Entrance Scholarships for Independent Schools (EESIS)"
+        ]
+      }
+    ],
+    "work":[
+      {
+        "company":"DSO National Laboratories",
+        "title":"Software Engineer and Machine Learning Intern",
+        "years":"May 2021 - Jul 2021",
+        "description": [
+          "Enhanced and adapted deep-learning models to extract and remove text cleanly from meme images with OpenCV, Tensorflow, PIL, as compared to the baseline model which has visual artifacts",
+          "Received strong recognition from staff, who subsequently integrated improvements into other projects",
+          "Programmed a web-based application that deploys the models, displays images from a database along with an intuitive frontend editor to dynamically modify text on images using Vue.js, Quasar, HTML Canvas"
+        ]
+      },
+      {
+        "company":"Yoozoo Games",
+        "title":"Full-Stack Software Engineer Intern",
+        "years":"May 2020 - Jul 2020",
+        "description": [
+          "Developed a robust AI chatbot serving as smart receptionist with 10 functions using Rasa and Python",
+          "Built an interactive chatbot user interface with Speech-to-Text/Text-to-Speech capabilities for prospective MNC clients and internal projects with React.js, Node.js, HTML, CSS, Flask, Postman, Azure Cloud Service"
+        ]
+      },
+      {
+        "company":"Novartis Oncology",
+        "title":"Medical Affairs Intern",
+        "years":"May 2019 - Jul 2019",
+        "description": [
+          "Managed the meticulous documentation of clinical trials crucial in drug development process"
+        ]
+      },
+      {
+        "company":"Defence Science Technology Agency (DSTA)",
+        "title":"App Development Intern",
+        "years":"Jan 2019 - Mar 2019",
+        "description": [
+          "Programmed an Android application targeting Wi-Fi vulnerability with Java and XML on Android Studio",
+          "Utilized location services to reduce risk of Wi-Fi exploits by hackers, especially when complimentary Wi-Fi services are provided by public agencies and protection measures are generally neglected"
+        ]
+      }
+    ],
+    "skills":{
+      "languages": [
+        {
+          "name":"Python",
+          "level":"85%"
+        },
+        {
+          "name":"HTML",
+          "level":"85%"
+        },
+        {
+          "name":"CSS",
+          "level":"75%"
+        },
+        {
+          "name":"Javascript",
+          "level":"70%"
+        },
+        {
+          "name":"Java",
+          "level":"70%"
+        },
+        {
+          "name":"SQL",
+          "level":"60%"
+        },
+        {
+          "name":"R",
+          "level":"60%"
+        },
+        {
+          "name":"C",
+          "level":"50%"
+        }
+      ],
+      "libraries": [
+        {
+          "name":"ReactJs",
+          "level":"70%"
+        },
+        {
+          "name":"VueJs",
+          "level":"65%"
+        },
+        {
+          "name":"Pandas",
+          "level":"60%"
+        },
+        {
+          "name":"Quasar",
+          "level":"60%"
+        },
+        {
+          "name":"Rasa",
+          "level":"60%"
+        },
+        {
+          "name":"OpenCV",
+          "level":"50%"
+        },
+        {
+          "name":"dplyr",
+          "level":"50%"
+        },
+        {
+          "name":"Tensorflow",
+          "level":"50%"
+        }
+      ]
+    }
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Canadian Wanderlust",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"01.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      },
+      {
+        "title":"Fury Fighting Gear",
+        "category":"(offline now) A fighting gear company I started",
+        "image":"02.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Original Thai Food",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"03.jpg",
+        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title":"Resume Website",
+        "category":"A React based resume website template",
+        "image":"04.jpg",
+        "url":"http://www.timbakerdev.com"
+      }
+    ]
+  },
+  "testimonials":{
+    "testimonial": [
+      {
+        "referee": "Eugene Siow, DSO mentor",
+        "text": "A highly motivated independent learner",
+        "link": "./DSO Testimonial.pdf"
+      },
+      {
+        "referee": "Ng Wai Foong, Yoozoo mentor",
+        "text": "Very proactive, always makes a conscientious effort to improve her skills and accomplishes her tasks efficiently",
+        "link": "./Yoozoo Testimonial.pdf"
+      },
+      {
+        "referee": "Ms Kiran, Hwa Chong Institution teacher",
+        "text": "Articulate and genuinely receptive to diverse viewpoints, yet reflective and capable of forming her own opinion",
+        "link": "./Testimonial (JC).pdf"
+      },
+      {
+        "referee": "Foo Soo Ling, Nanyang Girls' High teacher",
+        "text": "A cheerful person with an optimistic outlook, Song Yun's winsome personality will always be a key factor in drawing people together and building people up",
+        "link": "./Testimonial (Sec 4).pdf"
+      }
+    ]
+  },
+  "interests":{
+    "interest": [
+      {
+        "title":"Canadian Wanderlust",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"01.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      },
+      {
+        "title":"Fury Fighting Gear",
+        "category":"(offline now) A fighting gear company I started",
+        "image":"02.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Original Thai Food",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"03.jpg",
+        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title":"Resume Website",
+        "category":"A React based resume website template",
+        "image":"04.jpg",
+        "url":"http://www.timbakerdev.com"
+      }
+    ]
+  }
+}
