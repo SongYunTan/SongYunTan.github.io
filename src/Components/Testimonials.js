@@ -24,7 +24,7 @@ class Testimonials extends Component {
               <div className="flexslider">
                 <div className="two columns header-col">
                   <h1>
-                    <span>Client Testimonials</span>
+                    <span></span>
                   </h1>
                 </div>
                 <ul className="slides">{testimonial}</ul>
