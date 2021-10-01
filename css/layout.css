@@ -379,12 +379,20 @@ ul#nav li.current a { color: var(--primary); }
 .flex-direction-nav {
    *height: 0;
 }
+.flex-direction-nav {
+   display: block !important;
+   opacity: 1 !important;
+   top: 30% !important;
+   width: 100%;
+   z-index: 999 !important;
+}
+
 .flex-direction-nav a {
    text-decoration: none;
    display: block;
    width: 40px;
    height: 40px;
-   margin: -20px 0 0;
+   margin: 0;
    position: absolute;
    top: 50%;
    z-index: 999;
@@ -398,25 +406,42 @@ ul#nav li.current a { color: var(--primary); }
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
 }
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('/fonts/flexslider-icon.eot');
+	src:url('/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/flexslider-icon.woff') format('woff'),
+		url('/fonts/flexslider-icon.ttf') format('truetype'),
+		url('/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 .flex-direction-nav a:before {
    font-family: "flexslider-icon";
    font-size: 40px;
-   display: inline-block;
+   display: block;
    content: '\f001';
    color: var(--black-txt);
    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
    content: '\f002';
+   color: var(--black-txt);
 }
 .flex-direction-nav .flex-prev {
+   opacity: 1;
    left: -50px;
+   color: var(--black-txt);
+   text-align: right;
 }
 .flex-direction-nav .flex-next {
    right: -50px;
    text-align: right;
+   color: var(--black-txt);
 }
-
+.flex-direction-nav li a {
+   padding: 15px;
+}
 /* Control Nav */
 .flex-control-nav {
     width: 100%;
