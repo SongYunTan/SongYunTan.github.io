@@ -1,9 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 import Particles from "react-particles-js";
-import particlesConfig from "../particle-config";
 
-export default function ParticleBackground() {
+class ParticleBackground extends Component {
+  render() {
+    const config = this.props.config;
+
     return (
-        <Particles className="particle-bg" params={particlesConfig}></Particles>
+        <Particles className="particle-bg" params={config}></Particles>
     )
+  }
 }
+
+export default ParticleBackground;
