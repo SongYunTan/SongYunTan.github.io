@@ -245,6 +245,7 @@ ul#nav li.current a { color: var(--primary); }
    border-radius: 8px;
    font-size: 14px;
    padding: 10px;
+   /* box-shadow: 2px 2px 4px var(--grey-txt); */
 }
 #about .download .button:hover {
    background: var(--secondary);

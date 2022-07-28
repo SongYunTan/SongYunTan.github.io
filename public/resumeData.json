@@ -59,7 +59,7 @@
         "description": [
         ],
         "link": [
-
+          "https://www.ninjavan.co/en-sg"
         ]
       },
       {
@@ -73,7 +73,7 @@
           "Programmed a web-based application that deploys the models, displays images from a database along with an intuitive frontend editor to dynamically modify text on images using Vue.js, Quasar, HTML Canvas"
         ],
         "link": [
-
+          "https://www.dso.org.sg/"
         ]
       },
       {
@@ -86,7 +86,7 @@
           "Built an interactive chatbot user interface with Speech-to-Text/Text-to-Speech capabilities for prospective MNC clients and internal projects with React.js, Node.js, HTML, CSS, Flask, Postman, Azure Cloud Service"
         ],
         "link": [
-
+          "https://global.yoozoo.com/"
         ]
       },
       {
@@ -97,6 +97,9 @@
         "description": [
           "Programmed an Android application targeting Wi-Fi vulnerability with Java and XML on Android Studio",
           "Utilized location services to reduce risk of Wi-Fi exploits by hackers, especially when complimentary Wi-Fi services are provided by public agencies and protection measures are generally neglected"
+        ],
+        "link": [
+          "https://www.dsta.gov.sg/home"
         ]
       }
     ],
