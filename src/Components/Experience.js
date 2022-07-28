@@ -7,9 +7,10 @@ class Experience extends Component {
     if (!this.props.data) return null;
 
     const work = this.props.data.work.map(function (work) {
+      const imageSrc = "/images/" + work.image
       return (
         <div className="company" key={work.company}>
-          <h3>{work.company}</h3>
+          <img className="image" src={imageSrc}/>
           <p className="info">
             {work.title}
             <span>&bull;</span> <em className="date">{work.years}</em>
