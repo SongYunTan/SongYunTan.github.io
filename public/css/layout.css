@@ -392,7 +392,7 @@ ul#nav li.current a { color: var(--primary); }
    display: block;
    width: 40px;
    height: 40px;
-   margin: -20px 0 0;
+   margin: 0;
    position: absolute;
    top: 50%;
    z-index: 999;
@@ -419,23 +419,29 @@ ul#nav li.current a { color: var(--primary); }
 .flex-direction-nav a:before {
    font-family: "flexslider-icon";
    font-size: 40px;
-   display: inline-block;
+   display: block;
    content: '\f001';
    color: var(--black-txt);
    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
    content: '\f002';
+   color: var(--black-txt);
 }
 .flex-direction-nav .flex-prev {
    opacity: 1;
    left: -50px;
+   color: var(--black-txt);
+   text-align: right;
 }
 .flex-direction-nav .flex-next {
    right: -50px;
    text-align: right;
+   color: var(--black-txt);
 }
-
+.flex-direction-nav li a {
+   padding: 15px;
+}
 /* Control Nav */
 .flex-control-nav {
     width: 100%;

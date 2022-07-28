@@ -27,7 +27,7 @@ class Testimonials extends Component {
                     <span></span>
                   </h1>
                 </div>
-                <ul className="slides">{testimonial}</ul>
+                <ul className="slides flex-direction-nav">{testimonial}</ul>
               </div>
             </div>
           </div>
