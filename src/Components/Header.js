@@ -1,10 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Fade from "react-reveal";
 import ParticleBackground from "./ParticleBackground";
 
 class Header extends Component {
   render() {
     if (!this.props.data) return null;
+
+    // const handleScroll = () => window.scrollTo({ top: 1500, behavior: 'smooth' }) 
 
     const project = this.props.data.project;
     const github = this.props.data.github;

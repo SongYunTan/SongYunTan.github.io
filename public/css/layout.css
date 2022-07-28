@@ -60,13 +60,13 @@ body { background: var(--dark-bg); }
   letter-spacing: 2.5px;
   margin: 0 auto;
   z-index: 100;
-  position: sticky;
+  position: fixed;
   display: block;
   right: 0;
   top: 0;
-  height: 48px; 
+  height: 48px;
+  background-color: var(--dark-bg);
 }
-.opaque { background-color: var(--dark-bg); }
 
 ul#nav {
   min-height: 48px;
@@ -113,7 +113,7 @@ ul#nav li.current a { color: var(--primary); }
 
 #home {
    position: relative;
-   height: 740px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
    text-align: center;
@@ -207,6 +207,7 @@ ul#nav li.current a { color: var(--primary); }
    background: var(--light-bg);
    padding-top: 96px;
    overflow: hidden;
+   height: 50vh;
 }
 
 #about h1 {
@@ -267,7 +268,7 @@ ul#nav li.current a { color: var(--primary); }
    background-attachment: fixed; */
    
    position: relative;
-   min-height: 200px;
+   min-height: 50vh;;
    width: 100%;
    overflow: hidden;
    background-color: var(--light-bg);
