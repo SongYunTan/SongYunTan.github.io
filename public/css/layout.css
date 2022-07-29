@@ -37,6 +37,10 @@
    --light-txt: #FFFFFD;
    --grey-txt: #6E7881;
    --black-txt: #111111;
+   --ninjavan: #B53339;
+   --dso: #1F4EAD;
+   --yoozoo: #ED772F;
+   --dsta: #0A2272;
 }
 
 body { background: var(--dark-bg); }
@@ -495,8 +499,19 @@ ul#nav li.current a { color: var(--primary); }
 #experience h3 {
    font: 22px/30px 'opensans-bold', sans-serif;
 }
+
+#experience .image {
+   border: 2px solid var(--dark-bg);
+   border-radius: 10px;
+}
+
+#experience .image:hover {
+   border: 2px solid red;
+}
+
 #experience img {
    width: 120px;
+   padding: 10px;
 }
 
 #experience .header-col { padding-top: 9px; }

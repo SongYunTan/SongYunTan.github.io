@@ -7,10 +7,13 @@ class Experience extends Component {
     if (!this.props.data) return null;
 
     const work = this.props.data.work.map(function (work) {
+      console.log(work.link)
       const imageSrc = "/images/" + work.image
       return (
         <div className="company" key={work.company}>
-          <img className="image" src={imageSrc}/>
+          <a href={work.link} target="_blank" rel="noreferrer">
+            <img className="image" src={imageSrc} alt={work.company}/>
+          </a>
           <p className="info">
             {work.title}
             <span>&bull;</span> <em className="date">{work.years}</em>
