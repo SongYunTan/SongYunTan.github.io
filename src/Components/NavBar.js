@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
 
 class NavBar extends Component {
   render() {
     return (
       <nav id="nav-wrap">
-        <ul id="nav" className="nav">
+        <ul>
           <li className="current">
             <a className="smoothscroll" href="#home">
               Home

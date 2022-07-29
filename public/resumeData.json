@@ -54,52 +54,44 @@
       {
         "company":"Ninja Logistics",
         "image":"ninjavanLogo.png",
+        "link": "https://www.ninjavan.co/en-sg",
         "title":"Software Engineer Intern",
         "years":"Jun 2022 - Aug 2021",
         "description": [
-        ],
-        "link": [
-          "https://www.ninjavan.co/en-sg"
         ]
       },
       {
         "company":"DSO National Laboratories",
         "image":"dsoLogo.png",
+        "link": "https://www.dso.org.sg/",
         "title":"Software Engineer and Machine Learning Intern",
         "years":"May 2021 - Jul 2021",
         "description": [
           "Enhanced and adapted deep-learning models to extract and remove text cleanly from meme images with OpenCV, Tensorflow, PIL, as compared to the baseline model which has visual artifacts",
           "Received strong recognition from staff, who subsequently integrated improvements into other projects",
           "Programmed a web-based application that deploys the models, displays images from a database along with an intuitive frontend editor to dynamically modify text on images using Vue.js, Quasar, HTML Canvas"
-        ],
-        "link": [
-          "https://www.dso.org.sg/"
         ]
       },
       {
         "company":"Yoozoo Games",
         "image":"yoozooLogo.png",
+        "link": "https://global.yoozoo.com/",
         "title":"Full-Stack Software Engineer Intern",
         "years":"May 2020 - Jul 2020",
         "description": [
           "Developed a robust AI chatbot serving as smart receptionist with 10 functions using Rasa and Python",
           "Built an interactive chatbot user interface with Speech-to-Text/Text-to-Speech capabilities for prospective MNC clients and internal projects with React.js, Node.js, HTML, CSS, Flask, Postman, Azure Cloud Service"
-        ],
-        "link": [
-          "https://global.yoozoo.com/"
         ]
       },
       {
         "company":"Defence Science Technology Agency (DSTA)",
         "image":"dstaLogo.png",
+        "link": "https://www.dsta.gov.sg/home",
         "title":"App Development Intern",
         "years":"Jan 2019 - Mar 2019",
         "description": [
           "Programmed an Android application targeting Wi-Fi vulnerability with Java and XML on Android Studio",
           "Utilized location services to reduce risk of Wi-Fi exploits by hackers, especially when complimentary Wi-Fi services are provided by public agencies and protection measures are generally neglected"
-        ],
-        "link": [
-          "https://www.dsta.gov.sg/home"
         ]
       }
     ],
