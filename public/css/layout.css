@@ -467,8 +467,6 @@ body { background: var(--dark-bg); }
    overflow: hidden;
 }
 
-#experience a:hover, #experience a:focus { color: #313131; }
-
 #experience h1 {
    font: 30px 'opensans-bold', sans-serif;
    text-transform: uppercase;
@@ -478,43 +476,58 @@ body { background: var(--dark-bg); }
 #experience h1 span {
    border-bottom: 4px solid var(--primary);
 }
-#experience h3 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-}
 
-#experience .image {
+#experience .company-logos {
+   display: flex;
+   justify-content: space-between;
+}
+#experience .logo-box {
    border: 2px solid var(--dark-bg);
-   border-radius: 10px;
-   /* box-shadow: 2px 2px 4px var(--medium-dark-bg); */
-}
-
-#experience .image:hover {
-   border: 2px solid var(--ninjavan);
-}
-
-#experience img {
-   width: 120px;
+   border-radius: 8px;
+   width: 22%;
+   margin: 38px 18px 38px 18px;
    padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 2px 2px 10px var(--medium-dark-bg);
+}
+#experience .logo-box:hover {
+   border: 2px solid var(--ninjavan);
+   cursor: pointer;
+}
+#experience img {
+   max-width: 90%;
+   max-height: 80%;
+   padding: 15px;
 }
 
-#experience .header-col { padding-top: 9px; }
-#experience .main-col { padding-right: 10%; }
-
-.work {
+#experience .experience {
    margin-bottom: 48px;
    padding-bottom: 24px;
-   /* border-bottom: 1px solid #E8E8E8; */
 }
-#experience .company {
-   padding-top: 38px;
+
+#experience .exp-info {
+   display: flex;
+   border-bottom: 2px solid var(--dark-bg);
+   /* height: 200px; */
+   color: var(--medium-txt);
+   margin-top: 25px;
+   margin-bottom: 25px;
 }
-#experience .info {
+#experience .logo {
+   max-width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#experience .role {
    font: 16px/28px 'librebaskerville-italic', serif;
-   color: #6E7881;
    margin-bottom: 10px;
    margin-top: 5px;
 }
-#experience .info span {
+#experience .role span {
    margin-right: 5px;
    margin-left: 5px;
 }

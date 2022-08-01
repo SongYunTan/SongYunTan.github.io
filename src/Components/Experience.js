@@ -6,24 +6,35 @@ class Experience extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const work = this.props.data.work.map(function (work) {
-      const imageSrc = "/images/" + work.image
+    const companyLogos = this.props.data.experience.map(function (experience) {
+      const imageSrc = "/images/" + experience.image
       return (
-        <div className="company" key={work.company}>
-          <div className="image">
-            <a href={work.link} target="_blank" rel="noreferrer">
-              <img src={imageSrc} alt={work.company}/>
-            </a>
-          </div>
-          <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-          </p>
-          
-          <ul>{work.description.map(point => <li>{point}</li>)}</ul>
+        <div className="logo-box columns" key={experience.company}>
+          <img src={imageSrc} alt={experience.company}/>
         </div>
       );
     });
+
+    const expInfo = this.props.data.experience.map(function (experience) {
+      const imageSrc = "/images/" + experience.image
+      return (
+        <div className="exp-info row" key={experience.company}>
+          <div className="logo three columns">
+            <a href={experience.link} target="_blank" rel="noreferrer">
+              <img src={imageSrc} alt={experience.company}/>
+            </a>
+          </div>
+          <div className="info twelve columns">
+            <p className="role">
+              {experience.title}
+              <span>&bull;</span> <em className="date">{experience.years}</em>
+            </p>
+            <ul>{experience.description.map(point => <li>{point}</li>)}</ul>
+          </div>
+        </div>
+      );
+    });
+
 
     return (
       <section id="experience">
@@ -32,11 +43,9 @@ class Experience extends Component {
             <span>Experience</span>
           </h1>
           <br/>
-          <div className="row work">
-            <div className="three columns header-col">
-              
-            </div>
-            <div className="nine columns main-col">{work}</div>
+          <div className="experience">
+            <div className="company-logos row">{companyLogos}</div>
+            <div>{expInfo}</div>
           </div>
         </Slide>
       </section>
