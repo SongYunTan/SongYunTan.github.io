@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import reactReveal from "react-reveal";
 
 class Testimonials extends Component {
   render() {
