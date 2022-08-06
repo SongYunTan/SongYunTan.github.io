@@ -24,7 +24,7 @@ class Contact extends Component {
             <span>Contact</span>
           </h1>
           
-          <p className="lead">{message}</p>
+          <p>{message}</p>
           <ul className="social-links">{networks}</ul>
           
         </Fade>

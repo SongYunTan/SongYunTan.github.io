@@ -29,7 +29,8 @@
    --light-medium-bg: #FAFAFA;
    --medium-bg: #EFF0F1;
    --medium-dark-bg: #6E7881;
-   --dark-bg: #111111;
+   --dark-bg: #191919;
+   --darker-bg: #111111;
    --light-txt: #FFFFFD;
    --medium-txt: #6E7881;
    --dark-txt: #111111;
@@ -39,7 +40,7 @@
    --dsta: #0A2272;
 }
 
-body { background: var(--dark-bg); }
+body { background: var(--darker-bg); }
 
 /* ------------------------------------------------------------------ */
 /* b. NavBar Styles
@@ -60,7 +61,7 @@ body { background: var(--dark-bg); }
   position: fixed;
   display: block;
   height: 48px;
-  background-color: var(--dark-bg);
+  background-color: var(--darker-bg);
 }
 
 #nav-wrap ul {
@@ -194,7 +195,7 @@ body { background: var(--dark-bg); }
 
 #about {
    background: var(--light-bg);
-   padding-top: 96px;
+   padding-top: 90px;
    overflow: hidden;
    height: 100vh;
 }
@@ -250,7 +251,7 @@ body { background: var(--dark-bg); }
 } */
 
 /* ------------------------------------------------------------------
-/* e. Testimonials
+/* e. Testimonials Section
 /* ------------------------------------------------------------------ */
 
 #testimonials {
@@ -314,7 +315,7 @@ body { background: var(--dark-bg); }
 
 /* Reset */
 .flexslider a:active,
-.flexslider a:focus  { outline: none; }
+.flexslider a:focus { outline: none; }
 .slides,
 .flex-control-nav,
 .flex-direction-nav { margin: 0; padding: 0; list-style: none;}
@@ -337,14 +338,14 @@ body { background: var(--dark-bg); }
 .flex-container { zoom: 1; position: relative; }
 
 /* Clearfix for .slides */
-/* .slides:before,
+.slides:before,
 .slides:after {
    content: " ";
    display: table;
 }
 .slides:after {
    clear: both;
-} */
+}
 
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
@@ -449,7 +450,7 @@ body { background: var(--dark-bg); }
 #experience {
    background: var(--light-medium-bg);
    padding-top: 90px;
-   padding-bottom: 60px;
+   padding-bottom: 90px;
    overflow: hidden;
 }
 
@@ -463,15 +464,19 @@ body { background: var(--dark-bg); }
    border-bottom: 4px solid var(--primary);
 }
 
+#experience .experience {
+   margin-top: 45px;
+   margin-bottom: 45px;
+}
 #experience .company-logos {
    display: flex;
    justify-content: space-between;
 }
 #experience .logo-box {
-   border: 2px solid var(--dark-bg);
+   border: 2px solid var(--darker-bg);
    border-radius: 8px;
    width: 22%;
-   margin: 38px 18px 38px 18px;
+   margin: 0px 18px;
    padding: 10px;
    display: flex;
    justify-content: center;
@@ -488,18 +493,12 @@ body { background: var(--dark-bg); }
    padding: 15px;
 }
 
-#experience .experience {
-   margin-bottom: 48px;
-   padding-bottom: 24px;
-}
-
 #experience .exp-info {
    display: flex;
    /* border-bottom: 2px solid var(--medium-dark-bg); */
    /* height: 200px; */
    color: var(--dark-txt);
-   margin-top: 25px;
-   margin-bottom: 25px;
+   margin-top: 45px;
 }
 #experience .logo {
    max-width: 100%;
@@ -533,7 +532,7 @@ body { background: var(--dark-bg); }
 #education {
    background: var(--light-medium-bg);
    padding-top: 90px;
-   padding-bottom: 60px;
+   padding-bottom: 90px;
    overflow: hidden;
 }
 
@@ -555,13 +554,15 @@ body { background: var(--dark-bg); }
 #education .header-col { padding-top: 9px; }
 #education .main-col { padding-right: 10%; }
 
-.education {
-   margin-bottom: 48px;
-   padding-bottom: 24px;
-   /* border-bottom: 1px solid #E8E8E8; */
+#education .education {
+   margin-top: 45px;
+   margin-bottom: 45px;
 }
 #education .school {
-   padding-top: 38px;
+   padding-top: 30px;
+}
+#education .school:first-child {
+   padding-top: 0;
 }
 #education .info {
    font: 16px/28px 'librebaskerville-italic', serif;
@@ -589,7 +590,7 @@ body { background: var(--dark-bg); }
 #skills {
    background: var(--light-bg);
    padding-top: 90px;
-   padding-bottom: 60px;
+   padding-bottom: 90px;
 }
 #skills h1 {
    font: 30px 'opensans-bold', sans-serif;
@@ -605,17 +606,18 @@ body { background: var(--dark-bg); }
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.bars {
+#skills .bars {
 	width: 100%;
 	/* float: left; */
 	padding: 0;
    padding-left: 20px;
+   margin: 45px 0 45px 0;
 }
-.bars .skills {
+#skills .bars .skills {
   	margin-top: 20px;
    list-style: none;
 }
-.bars li {
+#skills .bars li {
    position: relative;
   	margin-bottom: 20px;
   	height: 20px;
@@ -625,7 +627,7 @@ body { background: var(--dark-bg); }
    border-color: var(--secondary);
    border-radius: 0; */
 }
-.bars-container {
+#skills .bars-container {
    background-color: var(--medium-bg);
    border-radius: 0px;
    position: relative;
@@ -635,7 +637,7 @@ body { background: var(--dark-bg); }
    /* float: left; */
    display: inline-block
 }
-.skillname{
+#skills .skillname {
    display: inline-block;
 	font: 15px 'opensans-bold', sans-serif;
    color: var(--black-txt);
@@ -650,13 +652,13 @@ body { background: var(--dark-bg); }
    
    /* float: left; */
 }
-.skillpercentage {
+#skills .skillpercentage {
    text-align: right;
    z-index: 2;
    position: absolute;
    padding-left: 270px;
 }
-.bar-expand {
+#skills .bar-expand {
    position: absolute;
    left: 0;
    top: 0;
@@ -843,7 +845,7 @@ body { background: var(--dark-bg); }
 }
 
 /* ------------------------------------------------------------------ */
-/* h. Skills Section
+/* i. Interests Section
 /* ------------------------------------------------------------------ */
 #interests {
    background: #ebeeee;
@@ -862,18 +864,16 @@ body { background: var(--dark-bg); }
 #interests-wrapper .columns { margin-bottom: 36px; }
 
 /* ------------------------------------------------------------------ */
-/* h. Contact Section
+/* j. Contact Section
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
-   padding-top: 96px;
-   padding-bottom: 102px;
-   color: #636363;
-   align-items: center;
+   background: var(--dark-bg);
+   padding-top: 90px;
+   padding-bottom: 90px;
    display: block;
+   align-items: center;
 }
-#contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
    font: 30px 'opensans-bold', sans-serif;
@@ -885,25 +885,24 @@ body { background: var(--dark-bg); }
 #contact h1 span {
    border-bottom: 4px solid var(--primary);
 }
-#contact p.lead {
+#contact p {
    font: 18px/36px 'opensans-light', sans-serif;
    text-align: center;
    color: var(--light-txt);
 }
-#contact .header-col { padding-top: 6px; }
 
 /* social links */
 #contact .social-links {
-   margin: 30px 0 30px 0;
-   padding: 0;
+   margin: 45px 0 45px 0;
    font-size: 30px;
    text-align: center;
 }
 #contact .social-links li {
    display: inline-block;
-   margin: 0;
-   padding: 0;
    margin-left: 42px;
+}
+#contact .social-links li:first-child { 
+   margin-left: 0; 
 }
 #contact .social-links li a {
    color: var(--light-bg);
@@ -920,13 +919,11 @@ body { background: var(--dark-bg); }
    color: var(--dark-bg);
 }
 
-#contact .social-links li:first-child { margin-left: 0; }
-
 /* ------------------------------------------------------------------ */
-/* i. Footer
+/* k. Footer Styles
 /* ------------------------------------------------------------------ */
 
-footer {
+#footer {
    padding-top: 48px;
    margin-bottom: 48px;
    color: #303030;
@@ -935,43 +932,24 @@ footer {
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
-
 /* copyright */
-footer .copyright {
-    margin: 0;
-    padding: 0;
+#footer .copyright {
+   margin: 0;
+   padding: 0;
  }
-footer .copyright li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    line-height: 24px;
-}
-.ie footer .copyright li {
-   display: inline;
-}
-footer .copyright li:before {
-    content: "\2022";
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #095153;
-}
-footer .copyright  li:first-child:before {
-    display: none;
+#footer .copyright li {
+   display: inline-block;
+   line-height: 24px;
 }
 
-/* Go To Top Button */
-#go-top {
-	position: absolute;
-	top: -24px;
+/* Scroll To Top Button */
+#footer .scrolltop {
+   position: absolute;
+	top: -25%;
    left: 50%;
-   margin-left: -30px;
+   margin-left: -21px;
 }
-#go-top a {
-	text-decoration: none;
-	border: 0 none;
+#footer .scrolltop a {
 	display: block;
 	width: 42px;
 	height: 42px;
@@ -983,31 +961,14 @@ footer .copyright  li:first-child:before {
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 
-   color: #fff;
+   color: var(--light-bg);
    font-size: 21px;
    line-height: 42px;
  	border-radius: 100%;
 }
-#go-top a:hover { 
+#footer .scrolltop a:hover { 
    background-color: var(--secondary); 
-   color: var(--dark-bg);
-}
-
-.social .btn:first-child{
-   margin-right: 30px;
-}
-.social .btn{
-   padding-left: 30px;
-   padding-right: 30px; 
-}
-.social .btn i{
-   margin-right: 15px;
-}
-.project-btn{
-   background-color: #1abc9c !important;
-}
-.github-btn{
-   background-color: #34495e !important;
+   color: var(--darker-bg);
 }
 
 /*

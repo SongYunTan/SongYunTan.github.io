@@ -42,7 +42,6 @@ class Experience extends Component {
           <h1>
             <span>Experience</span>
           </h1>
-          <br/>
           <div className="experience">
             <div className="company-logos row">{companyLogos}</div>
             <div>{expInfo}</div>

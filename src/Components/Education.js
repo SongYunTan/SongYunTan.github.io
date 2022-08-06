@@ -25,7 +25,6 @@ class Education extends Component {
           <h1>
             <span>Education</span>
           </h1>
-          <br/>
           <div className="row education">
             <div className="three columns header-col">
             </div>
