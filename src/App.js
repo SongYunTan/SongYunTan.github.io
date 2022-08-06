@@ -5,7 +5,6 @@ import "./App.css";
 import NavBar from "./Components/NavBar";
 import Header from "./Components/Header";
 import About from "./Components/About";
-import Testimonials from "./Components/Testimonials";
 import Experience from "./Components/Experience";
 import Education from "./Components/Education";
 import Skills from "./Components/Skills";
@@ -65,12 +64,10 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Header data={this.state.resumeData.main} config={this.state.particlesConfig} />
-        <About data={this.state.resumeData.main} />
-        <Testimonials data={this.state.resumeData.testimonials} />
+        <About data={this.state.resumeData.main} testimonials={this.state.resumeData.testimonials} />
         <Experience data={this.state.resumeData.resume} />
         <Education data={this.state.resumeData.resume} />
         <Skills data={this.state.resumeData.resume} />
-        {/* <Portfolio data={this.state.resumeData.portfolio} /> */}
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
       </div>
