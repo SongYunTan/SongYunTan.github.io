@@ -277,7 +277,7 @@ body { background: var(--darker-bg); }
 
  /* Blockquotes Icons */
 #testimonials i {
-	font-size: 50px;
+	font-size: 60px;
    color: var(--secondary);
 }
 #testimonials .fa-quote-right {
@@ -481,6 +481,7 @@ body { background: var(--darker-bg); }
    display: flex;
    justify-content: center;
    align-items: center;
+   background: transparent;
    box-shadow: 1px 1px 5px var(--medium-dark-bg);
 }
 #experience .logo-box:hover {
