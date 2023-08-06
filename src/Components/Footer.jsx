@@ -6,8 +6,14 @@ class Footer extends Component {
     if (!this.props.data) return null;
 
     return (
-      <footer>
+      <footer id="footer">
         <div className="row">
+          <div className="scrolltop">
+            <a className="smoothscroll" title="Back to Top" href="#home">
+              <i className="icon-up-open"></i>
+            </a>
+          </div>
+
           <Fade bottom>
             <div className="twelve columns">
               <ul className="copyright">
@@ -15,12 +21,6 @@ class Footer extends Component {
               </ul>
             </div>
           </Fade>
-
-          <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#home">
-              <i className="icon-up-open"></i>
-            </a>
-          </div>
         </div>
       </footer>
     );

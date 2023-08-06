@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
+import Testimonials from "./Testimonials";
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
+    if (!this.props.testimonials) return null;
 
     const profilepic = "images/" + this.props.data.image;
     const bio = this.props.data.bio;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
-    const resumeDownload = this.props.data.resumedownload;
+    const testimonials = this.props.testimonials;
 
     return (
       <section id="about">
@@ -41,6 +41,9 @@ class About extends Component {
                     </a>
                   </p>
                 </div>
+              </div>
+              <div className="row">
+                <Testimonials data={testimonials} />
               </div>
             </div>
           </div>

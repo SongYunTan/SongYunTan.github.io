@@ -7,20 +7,20 @@ class Experience extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const work = this.props.data.work.map(function (work) {
-      const imageSrc = "/images/" + work.image
+    const exp = this.props.data.experience.map(function (experience) {
+      const imageSrc = "/images/" + experience.image
       return {
-        label: work.company,
-        key: work.company,
+        label: experience.company,
+        key: experience.company,
         children:
-        <div className="company" key={work.company}>
+        <div className="company" key={experience.company}>
           <img className="image" src={imageSrc}/>
           <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
+            {experience.title}
+            <span>&bull;</span> <em className="date">{experience.years}</em>
           </p>
           
-          <ul>{work.description.map(point => <li>{point}</li>)}</ul>
+          <ul>{experience.description.map(point => <li>{point}</li>)}</ul>
         </div>
       };
     });
@@ -32,12 +32,12 @@ class Experience extends Component {
             <span>Experience</span>
           </h1>
           <br/>
-          <div className="row work">
+          <div className="row experience">
             <div className="twelve columns main-col">
               <Tabs 
                 defaultActiveKey="1"
                 tabPosition="left"
-                items={work}
+                items={exp}
               />
             </div>
           </div>

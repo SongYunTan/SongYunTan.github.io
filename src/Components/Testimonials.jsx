@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import reactReveal from "react-reveal";
 
 class Testimonials extends Component {
   render() {
@@ -8,7 +7,7 @@ class Testimonials extends Component {
     const testimonial = this.props.data.testimonial.map(function(testimonial) {
       return (
         <li key={testimonial.referee}>
-          <blockquote>
+          <blockquote className="columns">
             <p>{testimonial.text}</p>
             <cite>{testimonial.referee}</cite>
           </blockquote>
@@ -18,19 +17,18 @@ class Testimonials extends Component {
 
     return (
       <section id="testimonials">
-        <div className="text-container">
-          <div className="row">
-            <div className="ten columns flex-container">
-              <div className="flexslider">
-                <div className="two columns header-col">
-                  <h1>
-                    <span></span>
-                  </h1>
-                </div>
-                <ul className="slides flex-direction-nav">{testimonial}</ul>
+        <div className="columns flex-container">
+            <div className="flexslider">
+              <div className="columns">
+                <i className="fa fa-quote-left"></i>
+              </div>
+              <div>
+                <ul className="slides">{testimonial}</ul>
+              </div>
+              <div className="columns">
+                <i className="fa fa-quote-right"></i>
               </div>
             </div>
-          </div>
         </div>
       </section>
     );
