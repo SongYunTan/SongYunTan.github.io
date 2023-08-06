@@ -1,7 +1,7 @@
 {
   "main": {
     "name":"Hi! I'm Song Yun!",
-    "description":"I'm an aspiring full-stack software developer.",
+    "description":"I'm a full-stack software developer.",
     "image":"profilepic.jpg",
     "bio":"I am a penultimate student at NTU's Renaissance Engineering Programme, specializing in Computer Science. Aspiring to be the engineer behind cutting-edge solutions, I am highly passionate about full-stack software development and committed to creating value. ",
     "contactmessage":"I would love to connect with you!",
@@ -32,17 +32,18 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"Nanyang Technological University",
+        "school":"NTU",
         "image":"ntuLogo.png",
-        "degree":"Bachelor of Engineering Science (Computer Science) and Master of Science in Technology Management",
+        "degree":"Bachelor of Engineering (Computer Science) & Master of Science in Technology Management",
         "graduated":"Dec 2023",
         "description": [
           "Renaissance Engineering Programme (REP) Scholarship"
         ]
       },
       {
-        "school":"Hwa Chong Institution (Junior College)",
-        "degree":"GCE ‘A’ levels",
+        "school":"Hwa Chong (JC)",
+        "image":"hwachongLogo.png",
+        "degree":"GCE 'A' levels",
         "graduated":"Dec 2018",
         "description": [
           "6 Distinctions and University Admission Points of 88.75/90", 
@@ -52,18 +53,38 @@
     ],
     "work":[
       {
-        "company":"Ninja Logistics",
+        "company":"Credit Suisse",
+        "image":"creditsuisseLogo.png",
+        "title":"Software Engineer Intern",
+        "years":"May 2023 - Jul 2023",
+        "description": [
+          "Developed a high-usability data query tool in Typescript and Ant Design for Business Analysts and Product Teams, enabling search, view and extraction of financial data with autocomplete, tabination, bulk upload and export features",
+          "Streamlined query processes by eliminating inefficiencies of manual data query in Elasticsearch query",
+          "Implemented extensive test scripts, providing >95% code coverage for enterprise-wide production deployment",
+          "Set up databases and endpoints with Kotlin and Spring Boot to store responses from a feedback widget"
+        ],
+        "link": [
+          "https://www.credit-suisse.com/sg/en.html"
+        ]
+      },
+      {
+        "company":"Ninja Van",
         "image":"ninjavanLogo.png",
         "title":"Software Engineer Intern",
-        "years":"Jun 2022 - Aug 2021",
+        "years":"Jun 2022 - Aug 2022",
         "description": [
+          "Engineered an asynchronous system to automate the collection of cash-on-delivery payments from delivery drivers using DBS Bank API for cross-bank Giro payments (Go, Gin, Apache Kafka, Protocol Buffers, Rest APIs)",
+          "Scheduled cron jobs with Quartz, managed databases with SQLBoiler, implemented unit tests with Ginkgo and MockGen, and deployed the software with Redis and Docker",
+          "Designed a scalable, maintainable and fault-tolerant software architecture and database system",
+          "Employed Scrum framework with Jira, Confluence and created pull requests with Git, Bitbucket",
+          "Collaborated effectively with multiple stakeholders and engineering teams to align product closely to business needs"
         ],
         "link": [
           "https://www.ninjavan.co/en-sg"
         ]
       },
       {
-        "company":"DSO National Laboratories",
+        "company":"DSO",
         "image":"dsoLogo.png",
         "title":"Software Engineer and Machine Learning Intern",
         "years":"May 2021 - Jul 2021",
@@ -90,7 +111,7 @@
         ]
       },
       {
-        "company":"Defence Science Technology Agency (DSTA)",
+        "company":"DSTA",
         "image":"dstaLogo.png",
         "title":"App Development Intern",
         "years":"Jan 2019 - Mar 2019",
@@ -110,19 +131,19 @@
           "level":"85%"
         },
         {
-          "name":"HTML",
-          "level":"85%"
-        },
-        {
-          "name":"CSS",
-          "level":"75%"
-        },
-        {
           "name":"Javascript",
-          "level":"70%"
+          "level":"80%"
+        },
+        {
+          "name":"Typescript",
+          "level":"80%"
         },
         {
           "name":"Java",
+          "level":"70%"
+        },
+        {
+          "name":"Go",
           "level":"70%"
         },
         {
@@ -141,11 +162,23 @@
       "libraries": [
         {
           "name":"ReactJs",
-          "level":"70%"
+          "level":"80%"
+        },
+        {
+          "name":"Gin",
+          "level":"65%"
+        },
+        {
+          "name":"Spring Boot",
+          "level":"65%"
+        },
+        {
+          "name":"Kafka",
+          "level":"65%"
         },
         {
           "name":"VueJs",
-          "level":"65%"
+          "level":"60%"
         },
         {
           "name":"Pandas",
@@ -156,19 +189,7 @@
           "level":"60%"
         },
         {
-          "name":"Rasa",
-          "level":"60%"
-        },
-        {
-          "name":"OpenCV",
-          "level":"50%"
-        },
-        {
           "name":"dplyr",
-          "level":"50%"
-        },
-        {
-          "name":"Tensorflow",
           "level":"50%"
         }
       ]
@@ -205,23 +226,33 @@
   "testimonials":{
     "testimonial": [
       {
+        "referee": "Sean Tay, Credit Suisse mentor",
+        "text": "What stood out to me was Song Yun's efficiency and technical competency. Her dedication to software development best practices was evident in both her code and extensive unit tests.",
+        "link": "./DSO Testimonial.pdf"
+      },
+      {
+        "referee": "Harsh Gadodia, Ninja Van mentor",
+        "text": "Song Yun was able to communicate clearly and effectively with other engineers, as well as jump into unfamiliar code bases to make contributions to support her product.",
+        "link": "./DSO Testimonial.pdf"
+      },
+      {
         "referee": "Eugene Siow, DSO mentor",
-        "text": "A highly motivated independent learner",
+        "text": "A highly motivated independent learner.",
         "link": "./DSO Testimonial.pdf"
       },
       {
         "referee": "Ng Wai Foong, Yoozoo mentor",
-        "text": "Very proactive, always makes a conscientious effort to improve her skills and accomplishes her tasks efficiently",
+        "text": "Very proactive, always makes a conscientious effort to improve her skills and accomplishes her tasks efficiently.",
         "link": "./Yoozoo Testimonial.pdf"
       },
       {
         "referee": "Ms Kiran, Hwa Chong Institution teacher",
-        "text": "Articulate and genuinely receptive to diverse viewpoints, yet reflective and capable of forming her own opinion",
+        "text": "Articulate and genuinely receptive to diverse viewpoints, yet reflective and capable of forming her own opinion.",
         "link": "./Testimonial (JC).pdf"
       },
       {
         "referee": "Foo Soo Ling, Nanyang Girls' High teacher",
-        "text": "A cheerful person with an optimistic outlook, Song Yun's winsome personality will always be a key factor in drawing people together and building people up",
+        "text": "A cheerful person with an optimistic outlook, Song Yun's winsome personality will always be a key factor in drawing people together and building people up.",
         "link": "./Testimonial (Sec 4).pdf"
       }
     ]

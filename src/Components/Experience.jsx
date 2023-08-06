@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
+import { Tabs } from 'antd';
 
 class Experience extends Component {
 
@@ -8,7 +9,10 @@ class Experience extends Component {
 
     const work = this.props.data.work.map(function (work) {
       const imageSrc = "/images/" + work.image
-      return (
+      return {
+        label: work.company,
+        key: work.company,
+        children:
         <div className="company" key={work.company}>
           <img className="image" src={imageSrc}/>
           <p className="info">
@@ -18,7 +22,7 @@ class Experience extends Component {
           
           <ul>{work.description.map(point => <li>{point}</li>)}</ul>
         </div>
-      );
+      };
     });
 
     return (
@@ -29,10 +33,13 @@ class Experience extends Component {
           </h1>
           <br/>
           <div className="row work">
-            <div className="three columns header-col">
-              
+            <div className="twelve columns main-col">
+              <Tabs 
+                defaultActiveKey="1"
+                tabPosition="left"
+                items={work}
+              />
             </div>
-            <div className="nine columns main-col">{work}</div>
           </div>
         </Slide>
       </section>

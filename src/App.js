@@ -41,31 +41,15 @@ class App extends Component {
     });
   }
 
-  loadParticleConfig() {
-    $.ajax({
-      url: "./particlesjs-config.json",
-      dataType: "json",
-      cache: false,
-      success: function(data) {
-        this.setState({ particlesConfig: data });
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.log(err);
-        alert(err);
-      }
-    });
-  }
-
   componentDidMount() {
     this.getResumeData();
-    this.loadParticleConfig();
   }
 
   render() {
     return (
       <div className="App">
         <NavBar />
-        <Header data={this.state.resumeData.main} config={this.state.particlesConfig} />
+        <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
         <Testimonials data={this.state.resumeData.testimonials} />
         <Experience data={this.state.resumeData.resume} />

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
+import { Tabs } from 'antd';
 
 class Education extends Component {
 
@@ -7,16 +8,20 @@ class Education extends Component {
     if (!this.props.data) return null;
 
     const education = this.props.data.education.map(function (education) {
-      return (
+      const imageSrc = "/images/" + education.image
+      return {
+        label: education.school,
+        key: education.school,
+        children:
         <div className="school" key={education.school}>
-          <h3>{education.school}</h3>
+          <img className="image" src={imageSrc}/>
           <p className="info">
             {education.degree} <span>&bull;</span>
             <em className="date">{education.graduated}</em>
           </p>
           <ul>{education.description.map(point => <li>{point}</li>)}</ul>
         </div>
-      );
+      };
     });
 
     return (
@@ -27,12 +32,12 @@ class Education extends Component {
           </h1>
           <br/>
           <div className="row education">
-            <div className="three columns header-col">
-            </div>
-            <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns">{education}</div>
-              </div>
+            <div className="twelve columns main-col">
+              <Tabs 
+                defaultActiveKey="1"
+                tabPosition="left"
+                items={education}
+              />
             </div>
           </div>
         </Slide>

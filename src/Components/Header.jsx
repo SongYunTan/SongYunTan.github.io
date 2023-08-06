@@ -12,11 +12,10 @@ class Header extends Component {
     const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
-    const particlesConfig = this.props.config;
 
     return (
       <section id="home">
-        <ParticleBackground config={particlesConfig}/>
+        <ParticleBackground/>
         <div className="row banner">
           <div className="banner-text">
             <Fade bottom duration={100}>
