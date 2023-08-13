@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Row, Component } from "react";
 import Fade from "react-reveal";
 import Testimonials from "./Testimonials";
 
@@ -38,6 +38,9 @@ class About extends Component {
                   <p>
                     <a href="/Tan Song Yun.pdf" className="button" download>
                       <i className="fa fa-download"></i>Download Resume
+                    </a>
+                    <a href="https://github.com/SongYunTan" className="button" target="_blank" rel="noreferrer">
+                      <i className="fa fa-github"></i>View Github Profile
                     </a>
                   </p>
                 </div>

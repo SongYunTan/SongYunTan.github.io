@@ -237,6 +237,8 @@ body { background: var(--darker-bg); }
    border-radius: 8px;
    font-size: 14px;
    padding: 10px;
+   margin-right: 10px;
+   width: 190px;
 }
 #about .download .button:hover {
    border-color: var(--secondary);
