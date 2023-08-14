@@ -69,6 +69,7 @@ body { background: var(--darker-bg); }
   width: auto;
   /* right align the menu */
   text-align: right;
+  background-color: var(--darker-bg);
 }
 #nav-wrap ul li {
   position: relative;
@@ -104,7 +105,6 @@ body { background: var(--darker-bg); }
 #home {
    position: relative;
    height: 100vh;
-   min-height: 500px;
    width: 100%;
    text-align: center;
    overflow: hidden;
@@ -123,7 +123,6 @@ body { background: var(--darker-bg); }
    display: inline-block;
    margin: 0;
    width: 70%;
-   height: 28%;
    text-align: center;
    position: relative;
 }
@@ -171,7 +170,7 @@ body { background: var(--darker-bg); }
 /* scrolldown link */
 #home .scrolldown a {
    position: absolute;
-   bottom: 30px;
+   bottom: 50px;
    left: 50%;
    margin-left: -29px;
    color: #fff;
@@ -197,8 +196,7 @@ body { background: var(--darker-bg); }
 #about {
    background: var(--light-bg);
    padding-top: 90px;
-   overflow: hidden;
-   height: 100vh;
+   min-height: 100vh;
 }
 
 #about h1 {
@@ -222,34 +220,37 @@ body { background: var(--darker-bg); }
 #about p {
    line-height: 30px;
    color: var(--medium-txt);
+   text-align: justify;
 }
 
-#about .download {
-   width: 58.33333%;
-   padding-top: 6px;
+#about .buttons {
+   width: 100%;
+   margin-top: 6px;
 }
-#about .download .button {
+#about .buttons .button {
    background: transparent;
    color: var(--medium-txt);
    border-style: solid;
-   border-width: 2px;
+   border-width: 1.5px;
    border-color: var(--medium-dark-bg);
    border-radius: 8px;
    font-size: 14px;
    padding: 10px;
+   margin-left: 10px;
    margin-right: 10px;
-   width: 190px;
+   width: 220px;
+   text-align: center;
 }
-#about .download .button:hover {
+#about .buttons .button:hover {
    border-color: var(--secondary);
    color: var(--dark-txt);
 }
-#about .download .button i {
+#about .buttons .button i {
    margin-right: 8px;
    font-size: 18px;
    vertical-align: middle;
 }
-/* #about .download .button:hover i {
+/* #about .buttons .button:hover i {
    color: var(--secondary);
 } */
 
@@ -262,9 +263,7 @@ body { background: var(--darker-bg); }
    background-attachment: fixed; */
    display: block;
    position: relative;
-   height: 50vh;
    width: 100%;
-   overflow: hidden;
    background-color: var(--light-bg);
 }
 #testimonials .flex-container {
@@ -282,6 +281,14 @@ body { background: var(--darker-bg); }
 #testimonials i {
 	font-size: 60px;
    color: var(--secondary);
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+   #testimonials i {
+      font-size: 20px;
+      color: var(--secondary);
+   }
 }
 #testimonials .fa-quote-right {
    position: absolute;
@@ -454,7 +461,6 @@ body { background: var(--darker-bg); }
    background: var(--light-medium-bg);
    padding-top: 90px;
    padding-bottom: 20px;
-   overflow: hidden;
 }
 
 #experience h1 {
@@ -507,7 +513,10 @@ body { background: var(--darker-bg); }
 }
 
 #experience .header-col { padding-top: 9px; }
-#experience .main-col { height: 300px; }
+#experience .main-col { 
+   height: 300px; 
+   overflow: scroll;
+}
 
 .experience {
    margin-bottom: 48px;
@@ -576,7 +585,10 @@ body { background: var(--darker-bg); }
 }
 
 #education .header-col { padding-top: 9px; }
-#education .main-col { height: 300px; }
+#education .main-col { 
+   height: 300px; 
+   overflow: scroll;
+}
 
 #education .education {
    margin-top: 45px;
@@ -646,6 +658,7 @@ body { background: var(--darker-bg); }
   	margin-bottom: 20px;
   	height: 20px;
    display: flex;
+   min-width: 0;
    /* border-style: solid;
    border-width: 2px;
    border-color: var(--secondary);
@@ -659,7 +672,8 @@ body { background: var(--darker-bg); }
   	height: 20px;
    width: 300px;
    /* float: left; */
-   display: inline-block
+   display: inline-block;
+   text-align: right;
 }
 #skills .skillname {
    display: inline-block;
@@ -668,19 +682,16 @@ body { background: var(--darker-bg); }
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
-   background-color: var(--secondary);
-   width: 130px;
    z-index: 5;
    margin-bottom: 20px;
-   text-align: left;
-   
-   /* float: left; */
+   height: 20px;
+   width: 130px;
+   max-width: calc(25%);
+   text-overflow: ellipsis;
+   overflow: hidden;
 }
 #skills .skillpercentage {
-   text-align: right;
    z-index: 2;
-   position: absolute;
-   padding-left: 270px;
 }
 #skills .bar-expand {
    position: absolute;
@@ -895,8 +906,6 @@ body { background: var(--darker-bg); }
    background: var(--dark-bg);
    padding-top: 90px;
    padding-bottom: 90px;
-   display: block;
-   align-items: center;
 }
 
 #contact h1 {

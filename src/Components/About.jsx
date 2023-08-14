@@ -33,16 +33,17 @@ class About extends Component {
                   Let's connect!
                 </a>
               </p>
-              <div className="row">
-                <div className="columns download">
-                  <p>
-                    <a href="/Tan Song Yun.pdf" className="button" download>
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                    <a href="https://github.com/SongYunTan" className="button" target="_blank" rel="noreferrer">
-                      <i className="fa fa-github"></i>View Github Profile
-                    </a>
-                  </p>
+              <div className="row buttons-container">
+                <div className="columns buttons">
+                  <a href="/Tan Song Yun.pdf" className="button" target="_blank" rel="noreferrer">
+                    <i className="fa fa-download"></i>Download Resume
+                  </a>
+                  <a href="https://github.com/SongYunTan" className="button" target="_blank" rel="noreferrer">
+                    <i className="fa fa-github"></i>View Github Profile
+                  </a>
+                  <a href="/Testimonials.pdf" className="button" target="_blank" rel="noreferrer">
+                    <i className="fa fa-pencil"></i>View Full Testimonials
+                  </a>
                 </div>
               </div>
               <div className="row">

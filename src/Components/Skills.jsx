@@ -15,12 +15,10 @@ class Skills extends Component {
 
       return (
         <li key={skills.name}>
-          <span className="skillname" style={{backgroundColor: '#FFDCF4'}}>{skills.name}</span>
+          <span className="skillname">{skills.name}</span>
           <div className="bars-container">
             <span style={{ width, backgroundColor}} className={className}></span>
-            
             <span className="skillpercentage">{skills.level}</span>
-            
           </div>
         </li>
       );
@@ -33,12 +31,10 @@ class Skills extends Component {
 
       return (
         <li key={skills.name}>
-          <span className="skillname" style={{backgroundColor: '#FFDCF4'}}>{skills.name}</span>
+          <span className="skillname">{skills.name}</span>
           <div className="bars-container">
             <span style={{ width, backgroundColor}} className={className}></span>
-            
             <span className="skillpercentage">{skills.level}</span>
-            
           </div>
         </li>
       );
