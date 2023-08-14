@@ -21,9 +21,9 @@
 
 }
 
-/* screenwidth less than 900px
+/* screenwidth less than 992px
 --------------------------------------------------------------------- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
 
     /* header styles
    ------------------------------------------------------------------ */
@@ -42,16 +42,19 @@
    }
    /* nav-wrap */
    #nav-wrap {
-      font: 11px 'opensans-bold', sans-serif;
+      font: 12px 'opensans-bold', sans-serif;
       letter-spacing: 1.5px;
+   }
+   #nav-wrap ul li a {
+      padding: 8px 16px;
    }
 
 
    /* About Section
    ------------------------------------------------------------------- */
    #about .profile-pic {
-      width: 114px;
-      height: 114px;
+      width: 140px;
+      height: 140px;
       margin-left: 12px;
    }
    #about .contact-details { width: 50%; }
@@ -69,8 +72,7 @@
       line-height: 66px;
    }
    #testimonials blockquote p {
-      font-size: 22px;
-      line-height: 46px;      
+      font-size: 16px;
    }
 
     /* Call to Action Section
@@ -95,15 +97,15 @@
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      font: 12px 'opensans-bold', sans-serif;
+      font: 11px 'opensans-bold', sans-serif;
       background: transparent !important;
       letter-spacing: 1.5px;  
-      width: auto;
+      width: 100%;
       position: fixed;
       top: 0;
       right: 0;
@@ -184,6 +186,9 @@
       border: none;
    }  
 
+   #nav-wrap ul li a {
+      padding: 8px 10px;
+   }
 
    /* Header Styles
    -------------------------------------------------------------------- */
@@ -215,7 +220,13 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
+   #about .profile-pic { 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 180px;
+      height: 180px;
+   }
    #about .download .button {
       width: 100%;
       text-align: center;
@@ -223,6 +234,9 @@
    }
    #about .main-col { padding-right: 30px; }
 
+   #testimonials i {
+      font-size: 50px;
+   }
 
    /* Resume Section
    --------------------------------------------------------------------- */
@@ -269,10 +283,12 @@
    }
    #testimonials h1 span { display: block; }
    #testimonials .header-col h1:before { content: none; }
+   #testimonials i {
+      font-size: 40px;
+   }
    #testimonials blockquote { padding-bottom: 24px; }
    #testimonials blockquote p {
-      font-size: 20px;
-      line-height: 42px;      
+      font-size: 14px;
    }
 
    /* Control Nav */
@@ -292,7 +308,7 @@
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
    }  
-   #contact h1 span { display: block; }
+   /* #contact h1 span { display: block; } */
    #contact .header-col { padding-top: 0; }
    #contact .header-col h1:before { content: none;	}
    #contact .section-head p.lead { text-align: center;}
@@ -341,11 +357,18 @@
 /* mobile narrow
   -------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
    /* mobile navigation
    -------------------------------------------------------------------- */
-   #nav-wrap ul#nav { width: auto; float: none; }
+   #nav-wrap { width: 100%; }
+   #nav-wrap ul {
+      text-align: center;
+   }
+   #nav-wrap ul li a {
+      padding: 8px 6px;
+      font-size: 10px;
+   }
 
    /* header styles
    -------------------------------------------------------------------- */
@@ -362,6 +385,25 @@
    /* header social links */
    header .social { font-size: 20px;}
    header .social li { margin: 0 6px; }
+
+   #testimonials i {
+      font-size: 30px;
+   }
+   #testimonials blockquote p {
+      font-size: 12px;
+   }
+
+   .ant-tabs-tab {
+      width: 100px;
+   }
+   .ant-tabs-tab .ant-tabs-tab-btn {
+      width: 100%;
+      text-align: left;
+      /* display: inline-block; */
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+   }
 
    /* footer
    ------------------------------------------------------------------------ */
