@@ -93,12 +93,12 @@ body { background: var(--darker-bg); }
 }
 @media only screen and (max-device-width : 600px) {
    #nav-wrap ul li a {
-      padding: 8px 8px;
+      padding: 8px 4px;
    }
 }
 @media only screen and (max-device-width : 768px) {
    #nav-wrap ul li a {
-      padding: 8px 12px;
+      padding: 8px 8px;
    }
 }
 @media only screen and (max-device-width : 992px) {
@@ -334,7 +334,7 @@ body { background: var(--darker-bg); }
 }
 @media only screen and (max-device-width : 600px) {
    #testimonials blockquote p {
-      font-size: 12px;
+      font-size: 8px;
    }
 }
 #testimonials blockquote cite {
@@ -371,7 +371,7 @@ body { background: var(--darker-bg); }
 .flexslider .slides > li { position: relative; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; } */
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
@@ -535,6 +535,7 @@ body { background: var(--darker-bg); }
 }
 @media only screen and (max-device-width : 600px) {
    .ant-tabs-tab {
+      display: inline-block;
       width: 100px;
       text-overflow: ellipsis;
       overflow: hidden;
