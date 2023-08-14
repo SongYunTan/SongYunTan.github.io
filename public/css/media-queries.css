@@ -72,7 +72,7 @@
       line-height: 66px;
    }
    #testimonials blockquote p {
-      font-size: 16px;
+      font-size: 17px;
    }
 
     /* Call to Action Section
@@ -284,11 +284,11 @@
    #testimonials h1 span { display: block; }
    #testimonials .header-col h1:before { content: none; }
    #testimonials i {
-      font-size: 40px;
+      font-size: 45px;
    }
    #testimonials blockquote { padding-bottom: 24px; }
    #testimonials blockquote p {
-      font-size: 14px;
+      font-size: 16px;
    }
 
    /* Control Nav */
@@ -365,9 +365,22 @@
    #nav-wrap ul {
       text-align: center;
    }
+   #nav-wrap ul li {
+      max-width: 16%;
+   }
    #nav-wrap ul li a {
-      padding: 8px 6px;
-      font-size: 10px;
+      font-size: 0
+   }
+   #nav-wrap ul li.current a {
+      font-size: 0
+   }
+   #nav-wrap ul li a i {
+      font-size: 20px;
+      color: #fff;
+      padding-top: 8px;
+   }
+   #nav-wrap ul li.current a i { 
+      color: var(--primary); 
    }
 
    /* header styles
@@ -387,10 +400,10 @@
    header .social li { margin: 0 6px; }
 
    #testimonials i {
-      font-size: 30px;
+      font-size: 40px;
    }
    #testimonials blockquote p {
-      font-size: 12px;
+      font-size: 15px;
    }
 
    .ant-tabs-tab {

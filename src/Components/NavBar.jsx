@@ -7,37 +7,37 @@ class NavBar extends Component {
         <ul>
           <li className="current">
             <a className="smoothscroll" href="#home">
-              Home
+              <i className="fa fa-home"></i>Home
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#about">
-              About
+              <i className="fa fa-user"></i>About
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#experience">
-              Experience
+              <i className="fa fa-briefcase"></i>Experience
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#education">
-              Education
+              <i className="fa fa-graduation-cap"></i>Education
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#skills">
-              Skills
+              <i className="fa fa-code"></i>Skills
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#contact">
-              Contact
+              <i className="fa fa-phone"></i>Contact
             </a>
           </li>
         </ul>
