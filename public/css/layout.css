@@ -225,7 +225,6 @@ body { background: var(--darker-bg); }
 
 #about .buttons {
    width: 100%;
-   margin-top: 6px;
 }
 #about .buttons .button {
    background: transparent;
@@ -267,8 +266,8 @@ body { background: var(--darker-bg); }
    background-color: var(--light-bg);
 }
 #testimonials .flex-container {
-   padding-top: 20px;
-   padding-bottom: 60px;
+   padding-top: 32px;
+   padding-bottom: 48px;
    display: flex;
    justify-content: center;
    width: 95%;
@@ -282,12 +281,19 @@ body { background: var(--darker-bg); }
 	font-size: 60px;
    color: var(--secondary);
 }
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+@media only screen and (max-device-width : 600px) {
    #testimonials i {
-      font-size: 20px;
-      color: var(--secondary);
+      font-size: 30px;
+   }
+}
+@media only screen and (max-device-width : 768px) {
+   #testimonials i {
+      font-size: 40px;
+   }
+}
+@media only screen and (max-device-width : 992px) {
+   #testimonials i {
+      font-size: 50px;
    }
 }
 #testimonials .fa-quote-right {
@@ -301,17 +307,18 @@ and (max-device-width : 480px) {
    margin-bottom: 10%;
    position: relative;
    width: 100%;
+   padding-left: 3%;
 }
 #testimonials blockquote p {
    font-family: 'librebaskerville-italic', serif;
    padding: 0;
-   font-size: 16px;
+   /* font-size: 16px; */
    line-height: 35px;
    color: var(--dark-txt);
 }
 #testimonials blockquote cite {
    display: block;
-   font-size: 13px;
+   /* font-size: 13px; */
    font-style: normal;
    line-height: 18px;
    color: var(--dark-txt);
@@ -343,7 +350,7 @@ and (max-device-width : 480px) {
 .flexslider .slides > li { position: relative; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+/* .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; } */
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 

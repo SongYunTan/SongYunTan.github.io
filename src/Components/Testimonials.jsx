@@ -7,7 +7,7 @@ class Testimonials extends Component {
     const testimonial = this.props.data.testimonial.map(function(testimonial) {
       return (
         <li key={testimonial.referee}>
-          <blockquote className="columns">
+          <blockquote>
             <p>{testimonial.text}</p>
             <cite>{testimonial.referee}</cite>
           </blockquote>
@@ -19,12 +19,8 @@ class Testimonials extends Component {
       <section id="testimonials">
         <div className="columns flex-container">
             <div className="flexslider">
-              <div className="columns">
-                <i className="fa fa-quote-left"></i>
-              </div>
-              <div>
-                <ul className="slides">{testimonial}</ul>
-              </div>
+              <i className="fa fa-quote-left"></i>
+              <ul className="slides">{testimonial}</ul>
               <div className="columns">
                 <i className="fa fa-quote-right"></i>
               </div>
