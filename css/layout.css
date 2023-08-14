@@ -91,6 +91,21 @@ body { background: var(--darker-bg); }
   top: 0px;
   transition: top ease 0.2s;
 }
+@media only screen and (max-device-width : 600px) {
+   #nav-wrap ul li a {
+      padding: 8px 8px;
+   }
+}
+@media only screen and (max-device-width : 768px) {
+   #nav-wrap ul li a {
+      padding: 8px 12px;
+   }
+}
+@media only screen and (max-device-width : 992px) {
+   #nav-wrap ul li a {
+      padding: 8px 16px;
+   }
+}
 #nav-wrap ul li a:hover {
    top: -3px;
 }
@@ -225,6 +240,7 @@ body { background: var(--darker-bg); }
 
 #about .buttons {
    width: 100%;
+   text-align: center
 }
 #about .buttons .button {
    background: transparent;
@@ -283,7 +299,7 @@ body { background: var(--darker-bg); }
 }
 @media only screen and (max-device-width : 600px) {
    #testimonials i {
-      font-size: 30px;
+      font-size: 25px;
    }
 }
 @media only screen and (max-device-width : 768px) {
@@ -315,6 +331,11 @@ body { background: var(--darker-bg); }
    /* font-size: 16px; */
    line-height: 35px;
    color: var(--dark-txt);
+}
+@media only screen and (max-device-width : 600px) {
+   #testimonials blockquote p {
+      font-size: 12px;
+   }
 }
 #testimonials blockquote cite {
    display: block;
@@ -511,6 +532,14 @@ body { background: var(--darker-bg); }
 
 .ant-tabs-tab {
    width: 145px
+}
+@media only screen and (max-device-width : 600px) {
+   .ant-tabs-tab {
+      width: 100px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+   }
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
    color: var(--primary); 
