@@ -97,6 +97,9 @@ body { background: var(--darker-bg); }
 #nav-wrap ul li.current a { 
    color: var(--primary); 
 }
+#nav-wrap ul li a i {
+   color: transparent
+}
 
 /* ------------------------------------------------------------------ */
 /* c. Header Styles
