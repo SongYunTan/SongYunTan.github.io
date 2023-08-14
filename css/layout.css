@@ -91,21 +91,6 @@ body { background: var(--darker-bg); }
   top: 0px;
   transition: top ease 0.2s;
 }
-@media only screen and (max-device-width : 600px) {
-   #nav-wrap ul li a {
-      padding: 8px 4px;
-   }
-}
-@media only screen and (max-device-width : 768px) {
-   #nav-wrap ul li a {
-      padding: 8px 8px;
-   }
-}
-@media only screen and (max-device-width : 992px) {
-   #nav-wrap ul li a {
-      padding: 8px 16px;
-   }
-}
 #nav-wrap ul li a:hover {
    top: -3px;
 }
@@ -294,23 +279,8 @@ body { background: var(--darker-bg); }
 
  /* Blockquotes Icons */
 #testimonials i {
-	font-size: 60px;
    color: var(--secondary);
-}
-@media only screen and (max-device-width : 600px) {
-   #testimonials i {
-      font-size: 25px;
-   }
-}
-@media only screen and (max-device-width : 768px) {
-   #testimonials i {
-      font-size: 40px;
-   }
-}
-@media only screen and (max-device-width : 992px) {
-   #testimonials i {
-      font-size: 50px;
-   }
+   font-size: 60px;
 }
 #testimonials .fa-quote-right {
    position: absolute;
@@ -328,14 +298,8 @@ body { background: var(--darker-bg); }
 #testimonials blockquote p {
    font-family: 'librebaskerville-italic', serif;
    padding: 0;
-   /* font-size: 16px; */
    line-height: 35px;
    color: var(--dark-txt);
-}
-@media only screen and (max-device-width : 600px) {
-   #testimonials blockquote p {
-      font-size: 8px;
-   }
 }
 #testimonials blockquote cite {
    display: block;
@@ -532,15 +496,6 @@ body { background: var(--darker-bg); }
 
 .ant-tabs-tab {
    width: 145px
-}
-@media only screen and (max-device-width : 600px) {
-   .ant-tabs-tab {
-      display: inline-block;
-      width: 100px;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-   }
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
    color: var(--primary); 
