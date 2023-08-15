@@ -21,7 +21,7 @@ class Testimonials extends Component {
             <div className="flexslider">
               <i className="fa fa-quote-left"></i>
               <ul className="slides">{testimonial}</ul>
-              <div className="columns">
+              <div className="columns quote-right">
                 <i className="fa fa-quote-right"></i>
               </div>
             </div>
