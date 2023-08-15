@@ -294,7 +294,6 @@
    /* Control Nav */
    .flex-control-nav {
       text-align: center;
-      margin-left: -30px;
    }
 
 
@@ -361,9 +360,7 @@
 
    /* mobile navigation
    -------------------------------------------------------------------- */
-   #nav-wrap { 
-      width: 100%; 
-   }
+   #nav-wrap { width: 100%; }
    #nav-wrap ul {
       text-align: center;
    }
@@ -401,11 +398,18 @@
    header .social { font-size: 20px;}
    header .social li { margin: 0 6px; }
 
+   #about .buttons .button {
+      width: 100%;
+   }
+
    #testimonials i {
       font-size: 40px;
    }
    #testimonials blockquote p {
       font-size: 15px;
+   }
+   #testimonials .fa-quote-right {
+      top: 70%
    }
 
    .ant-tabs-tab {

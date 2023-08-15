@@ -285,6 +285,9 @@ body { background: var(--darker-bg); }
    color: var(--secondary);
    font-size: 60px;
 }
+#testimonials .quote-right {
+   padding-left: 0;
+}
 #testimonials .fa-quote-right {
    position: absolute;
    top: 50%;
